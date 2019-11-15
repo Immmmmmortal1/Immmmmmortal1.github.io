@@ -28,10 +28,10 @@ Xcode编译项目后，我们会看到一个同名的 dSYM 文件，dSYM 是保�
 
 ***一.xcode 还原法***
 每次打包app的时候 我们都会勾上两个选项.其中第二个选项就是我们上传的日志文件.
-![勾选处](blogImage/15446634260311/%E5%8B%BE%E9%80%89%E5%A4%84.png)
+![勾选处](img/blogImage/15446634260311/%E5%8B%BE%E9%80%89%E5%A4%84.png)
 
 然后 我们就可以每周 来看一下 崩溃日志.xcode已经直接图形化崩溃日志并且有完整的调用栈. 这个 可能需要 将代码会退到和上传版本一样 的地方 ,否则会出现定位错误.
-![选中你要查看的app和版本](blogImage/15446634260311/%E9%80%89%E4%B8%AD%E4%BD%A0%E8%A6%81%E6%9F%A5%E7%9C%8B%E7%9A%84app%E5%92%8C%E7%89%88%E6%9C%AC.png)
+![选中你要查看的app和版本](img/blogImage/15446634260311/%E9%80%89%E4%B8%AD%E4%BD%A0%E8%A6%81%E6%9F%A5%E7%9C%8B%E7%9A%84app%E5%92%8C%E7%89%88%E6%9C%AC.png)
 
 
 ***二.友盟还原法.***
@@ -44,14 +44,14 @@ Xcode编译项目后，我们会看到一个同名的 dSYM 文件，dSYM 是保�
 还有一种就是:测试的设备上的崩溃比较难以复现的bug  就直接连接设备 获取崩溃日志 然后进行手动解析!
 **1.获取设备的crash 文件**
 连接崩溃设备 获取crash 文件
-![连接设备](blogImage/15446634260311/%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87.png)
+![连接设备](img/blogImage/15446634260311/%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87.png)
 **2.选中"view device Logs "**
-![手机上应用的crash日志](blogImage/15446634260311/%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%BA%94%E7%94%A8%E7%9A%84crash%E6%97%A5%E5%BF%97.png)
+![手机上应用的crash日志](img/blogImage/15446634260311/%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%BA%94%E7%94%A8%E7%9A%84crash%E6%97%A5%E5%BF%97.png)
 **2.选中自己的app**
-![YSPProject](blogImage/15446634260311/YSPProject.png)
+![YSPProject](img/blogImage/15446634260311/YSPProject.png)
 
 **3.找到崩溃信息以工程名子开头的地方.后面的地址就是崩溃信息的内存地址**
-![YSPProject](blogImage/15446634260311/YSPProject.png)
+![YSPProject](img/blogImage/15446634260311/YSPProject.png)
 这里会有 两个地址
 1>.sliderAddress
 **0x104450000**
@@ -61,9 +61,9 @@ Xcode编译项目后，我们会看到一个同名的 dSYM 文件，dSYM 是保�
 4   YSPProject              *0x104750c2c* **0x104450000** + 3148844
 前面的是内存地址  后面的是sliderAddress
 **4.获取对应版本的dym 文件.可以直接将打包出来的xcodeArchive文件拖入到dsymTools窗口里面,可以同是拖多个但是 不能重名.(目前 会自动检索你的本地xcodeArchive文件):如下**
-![工具界面](blogImage/15446634260311/%E5%B7%A5%E5%85%B7%E7%95%8C%E9%9D%A2.png)
+![工具界面](img/blogImage/15446634260311/%E5%B7%A5%E5%85%B7%E7%95%8C%E9%9D%A2.png)
 **3.然后选择你的cpu类型**
-![选中之后的界面](blogImage/15446634260311/%E9%80%89%E4%B8%AD%E4%B9%8B%E5%90%8E%E7%9A%84%E7%95%8C%E9%9D%A2.png)
+![选中之后的界面](img/blogImage/15446634260311/%E9%80%89%E4%B8%AD%E4%B9%8B%E5%90%8E%E7%9A%84%E7%95%8C%E9%9D%A2.png)
 **4.然后把 赋值 的地址依次填入到相应的位置中.**
-![结果](blogImage/15446634260311/%E7%BB%93%E6%9E%9C.png)
+![结果](img/blogImage/15446634260311/%E7%BB%93%E6%9E%9C.png)
 然后就可以看到代码中错误的地方.
