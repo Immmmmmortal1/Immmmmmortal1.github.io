@@ -1,0 +1,17 @@
+I"�<h1 id="containsobject-去重的方法">containsObject 去重的方法</h1>
+<p>例如1.
+    NSString *str1 = @”123”;
+    NSString *str2 = @”345”;
+    NSString *str3 = @”123”;
+    NSArray *strArray = @[str1, str2, str3];
+    NSMutableArray *testStrArray = [NSMutableArray array];
+    这种使用 containsObject 来去重是可行的 因为 str1 的与 str3的内存地址是一样的
+ 例如2. <br />
+      TestObject *testObj1 = [[TestObject alloc] initWithName:@”123”];
+      TestObject *testObj2 = [[TestObject alloc] initWithName:@”1234”];
+      TestObject *testObj3 = [[TestObject alloc] initWithName:@”123”];
+      TestObject *testObj4 = [[TestObject alloc] initWithName:@”1235”];
+      NSArray *testArray = @[testObj1, testObj2, testObj3, testObj4, testObj1];
+      NSMutableArray *testMutableArray = [NSMutableArray array];  <br />
+这种使用 containsObject 来去重是不可行的 因为 testObj1 的与 testObj1可以去重 但是testObj1与testObj3 不行 .</p>
+:ET
