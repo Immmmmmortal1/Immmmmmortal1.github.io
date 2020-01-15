@@ -1,3 +1,12 @@
+layout:     post
+title:      layoutSubviews 与 drawRect
+subtitle:   比较
+date:       2019-06-12
+author:     Shuxia
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - iOS -
 # 首先两个方法都是异步执行。layoutSubviews方便数据计算，drawRect方便视图重绘。
 
 
