@@ -1,3 +1,12 @@
+layout:     post
+title:      setter与getter方法
+subtitle:   比较
+date:       2019-06-12
+author:     Shuxia
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - iOS -
 #同时书写 setter与getter方法
 在@implementation 实现中添加一行代码就OK了
 
