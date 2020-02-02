@@ -1,5 +1,5 @@
 layout:     post
-title:      属性与UIBarbuttonItem变量的区别
+title:      UIBarbuttonItem
 subtitle:   比较
 date:       2019-06-04
 author:     Shuxia

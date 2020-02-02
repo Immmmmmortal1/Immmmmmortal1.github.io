@@ -1,7 +1,7 @@
 layout:     post
 title:      containsObject 去重的方法
 subtitle:   containsObject 去重的方法
-date:       2019-11-13
+date:       2019-11-13-containsObject 去重的方法
 author:     Shuxia
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
