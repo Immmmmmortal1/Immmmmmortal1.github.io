@@ -12,7 +12,7 @@ github_repo: "https://github.com/Immmmmmortal1/Immmmmmortal1.github.io" # you co
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Love you More Than Three Thousands Times!"
-sidebar-avatar: /img/about-SX-gentle.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-SX-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
