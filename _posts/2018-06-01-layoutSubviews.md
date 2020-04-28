@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      layoutSubviews,layoutIfNeed,setNeedsLayout
 subtitle:   比较
@@ -7,6 +8,8 @@ header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - iOS -
+---
+
 # layoutSubviews,layoutIfNeed,setNeedsLayout  的使用
 
 一,官方解释,原理说明.不要直接调用layoutSubviews方法,

@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      containsObject 去重的方法
 subtitle:   containsObject 去重的方法
@@ -7,6 +8,7 @@ header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - iOS -
+---
 
 # containsObject 去重的方法
 例如1.
